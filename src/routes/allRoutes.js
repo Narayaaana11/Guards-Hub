@@ -98,13 +98,11 @@ import Kanban from "pages/Kanban";
 
 import Profile from "../pages/Security Pages/ProfilePage/profile";
 import MonthWiseReport from "../pages/Security Pages/MonthWiseReportPage/monthwisereport";
-import DayWiseReport from "../pages/Security Pages/DayWiseReportPage/daywisereport";
 import AppliedOD from "../pages/Security Pages/AppliedOD/appliedod";
 import DayMonthReport from "../pages/Security Pages/DayMonthReportPage/Daymonthreport";
 import SecurityRoaster from "pages/Security Pages/SecurityRoaster/Securityroaster";
 import EditRoaster from "pages/Security Pages/EditRoaster/Editroaster";
 import ContactUs from "../pages/Security Pages/ContactUsPage/contactus";
-import CoustomMonthReport from "../pages/Security Pages/CoustomMonthReportPage/CoustomMonthReport";
 import EmployeeForm from "pages/Security Pages/ProfilePage/EmployeeForm";
 import LeaveManagement from "pages/Security Pages/LeaveOdManagement/LeaveManagement"
 import MonthWiseChart from "pages/Security Pages/Monthwisechart/monthwisechart"
@@ -195,12 +193,10 @@ const userRoutes = [
 
   // ///////////////// Security Pages /////////////////////////////////////
   { path: "/profilepage", component: <Profile /> },
-  { path: "/day-wise-report", component: <DayWiseReport /> },
   { path: "/month-wise-report", component: <MonthWiseReport /> },
   { path: "/applied-od", component: <AppliedOD /> },
   { path: "/LeaveOdManagement", component: <LeaveManagement /> },
   { path: "/day-month-report", component: <DayMonthReport /> },
-  { path: "/coustom-month-report", component: <CoustomMonthReport /> },
   { path: "/security-roaster", component: <SecurityRoaster /> },
   { path: "/edit-roaster", component: <EditRoaster /> },
   { path: "/contactus", component: <ContactUs /> },

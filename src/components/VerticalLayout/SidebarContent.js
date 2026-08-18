@@ -160,12 +160,6 @@ const SidebarContent = props => {
               </Link>
             </li>
             <li>
-              <Link to="/day-wise-report" className=" waves-effect">
-                <i className="mdi mdi-calendar-today"></i>
-                <span>{props.t("Day-Wise-Report")}</span>
-              </Link>
-            </li>
-            <li>
               <Link to="/month-wise-report" className=" waves-effect">
                 <i className="mdi mdi-calendar-month"></i>
                 <span>{props.t("Month-Wise-Report")}</span>
@@ -195,13 +189,6 @@ const SidebarContent = props => {
                 <span>{props.t("Day Month Report")}</span>
               </Link>
             </li>
-            <li>
-              <Link to="/coustom-month-report" className=" waves-effect">
-                <i className="mdi mdi-chart-bar"></i>
-                <span>{props.t("Custom Month Report")}</span>
-              </Link>
-            </li>
-
 
             <li>
               <Link to="/contactus" className=" waves-effect">

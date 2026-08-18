@@ -1,40 +1,43 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ReactApexChart from 'react-apexcharts';
 
-import C3Chart from 'react-c3js';
-import 'c3/c3.css';
+const DonutChart = () => {
+    const series = [12, 30, 20];
+    const options = {
+        labels: ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'],
+        colors: ['#f0f1f4', '#7a6fbe', '#28bbe3'],
+        legend: {
+            show: true,
+            position: 'bottom',
+        },
+        plotOptions: {
+            pie: {
+                donut: {
+                    size: '70%',
+                },
+            },
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200,
+                },
+                legend: {
+                    position: 'bottom',
+                },
+            },
+        }],
+    };
 
-class DonutChart extends Component {
-
-    render() {
-        const data = {
-            columns: [
-                ['Download Sales', 12],
-                ['In-Store Sales', 30],
-                ['Mail-Order Sales', 20]
-            ],
-            type: "donut",
-        };
-
-        const donut = {
-            title: "In-Store Sales 30",
-            width: 30,
-            label: { show: !1 }
-        };
-
-        const color = {
-            pattern: ['#f0f1f4', '#7a6fbe', '#28bbe3']
-        };
-
-        const size = {
-            height: 300
-        };
-
-        return (
-            <React.Fragment>
-                <C3Chart data={data} donut={donut} color={color} size={size} dir="ltr" />
-            </React.Fragment>
-        );
-    }
-}
+    return (
+        <ReactApexChart
+            options={options}
+            series={series}
+            type="donut"
+            height={300}
+        />
+    );
+};
 
 export default DonutChart;

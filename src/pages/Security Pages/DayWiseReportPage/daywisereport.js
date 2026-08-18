@@ -310,7 +310,7 @@ const DayWiseReport = ({ setBreadcrumbItems }) => {
       try {
         return await fn();
       } catch (error) {
-        if (error.name === "AbortError") {
+        if (axios.isCancel(error) || error.name === "AbortError" || error.name === "CanceledError" || error.code === "ERR_CANCELED") {
           throw error;
         }
         if (error.response?.status === HTTP_STATUS.TOO_MANY_REQUESTS) {
@@ -393,7 +393,7 @@ const DayWiseReport = ({ setBreadcrumbItems }) => {
       setEmployeeDetailsCache(employees);
       return employees;
     } catch (err) {
-      if (err.name !== "AbortError") {
+      if (!axios.isCancel(err) && err.name !== "AbortError" && err.name !== "CanceledError" && err.code !== "ERR_CANCELED") {
         logger.error("Error fetching employee details:", err);
         const errorMessage = `Failed to fetch employee details: ${err.message}`;
         setError(errorMessage);
@@ -489,7 +489,7 @@ const DayWiseReport = ({ setBreadcrumbItems }) => {
       setAllEmployees(employees);
       return employees;
     } catch (err) {
-      if (err.name !== "AbortError") {
+      if (!axios.isCancel(err) && err.name !== "AbortError" && err.name !== "CanceledError" && err.code !== "ERR_CANCELED") {
         const errorMessage = err.response
           ? `Failed to fetch data for date ${formatDate(date)}: ${err.response.status} - ${err.response.data.message || err.message}`
           : `Failed to fetch data for date ${formatDate(date)}: ${err.message}`;
@@ -687,7 +687,7 @@ const DayWiseReport = ({ setBreadcrumbItems }) => {
         return false;
       }
     } catch (err) {
-      if (err.name !== "AbortError") {
+      if (!axios.isCancel(err) && err.name !== "AbortError" && err.name !== "CanceledError" && err.code !== "ERR_CANCELED") {
         logger.error("Error fetching attendance for update:", err);
         setFormError(`Failed to fetch attendance data: ${err.message}`);
         setFormData((prev) => ({
@@ -887,7 +887,7 @@ const DayWiseReport = ({ setBreadcrumbItems }) => {
         toggleAddModal();
       }, 1000);
     } catch (err) {
-      if (err.name !== "AbortError") {
+      if (!axios.isCancel(err) && err.name !== "AbortError" && err.name !== "CanceledError" && err.code !== "ERR_CANCELED") {
         logger.error(`Error ${formData.mode === "Add" ? "adding" : "updating"} attendance:`, err);
         logger.error("Error response:", err.response);
         const errorMessage = err.response?.data?.message || err.response?.statusText || err.message || "Unknown error occurred";

@@ -63,8 +63,7 @@ const parseAndFormatDate = (dateStr, outputFormat = "dd-MM-yyyy") => {
   return "N/A";
 };
 
-// Test parseAndFormatDate with known input
-console.log(`Test parseAndFormatDate("01-02-1974"): ${parseAndFormatDate("01-02-1974")}`);
+
 
 const Profile = (props) => {
   document.title = "Security Profile";
@@ -134,11 +133,6 @@ const Profile = (props) => {
     try {
       const res = await axios.get(`${baseURL}/emp/details`, { signal });
       const employees = res.data;
-
-      // Log raw empDob and empDoj for debugging
-      employees.forEach((emp) => {
-        console.log(`Employee ID: ${emp.empId}, empDob: "${emp.empDob}", empDoj: "${emp.empDoj}"`);
-      });
 
       const rows = employees.map((emp) => ({
         image: (
@@ -259,7 +253,7 @@ const Profile = (props) => {
       setFilteredRows(rows);
       setCurrentPage(1);
     } catch (error) {
-      if (error.name === "AbortError") return;
+      if (axios.isCancel(error) || error.name === "AbortError" || error.name === "CanceledError" || error.code === "ERR_CANCELED") return;
       console.error("Fetch Error:", error);
       toast.error(error.response?.data?.message || "Failed to fetch employee data.", {
         position: "top-right",

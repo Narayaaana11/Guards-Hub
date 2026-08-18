@@ -65,7 +65,7 @@ const ApplyODForm = () => {
         console.log("Fetched employees:", response.data);
         setEmployees(Array.isArray(response.data) ? response.data : []);
       } catch (error) {
-        if (error.name === "AbortError") return;
+        if (axios.isCancel(error) || error.name === "AbortError" || error.name === "CanceledError" || error.code === "ERR_CANCELED") return;
         console.error("Error fetching employees:", error);
         const errorMessage =
           error.response?.data?.message ||

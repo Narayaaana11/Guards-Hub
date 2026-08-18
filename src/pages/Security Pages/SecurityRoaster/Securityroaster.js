@@ -1050,7 +1050,7 @@ const SecurityRoaster = ({ setBreadcrumbItems }) => {
       try {
         return await fn();
       } catch (error) {
-        if (error.name === "AbortError") {
+        if (axios.isCancel(error) || error.name === "AbortError" || error.name === "CanceledError" || error.code === "ERR_CANCELED") {
           throw error;
         }
         if (error.response?.status === HTTP_STATUS.TOO_MANY_REQUESTS) {
@@ -1150,7 +1150,7 @@ const SecurityRoaster = ({ setBreadcrumbItems }) => {
       guardCache.set(cacheKey, { data: formattedGuards, timestamp: now });
       setGuards(formattedGuards);
     } catch (error) {
-      if (error.name !== "AbortError") {
+      if (!axios.isCancel(error) && error.name !== "AbortError" && error.name !== "CanceledError" && error.code !== "ERR_CANCELED") {
         toast.error(error.response?.data?.message || "Failed to fetch guards");
         setGuards([]);
       }
@@ -1237,7 +1237,7 @@ const SecurityRoaster = ({ setBreadcrumbItems }) => {
         guardCache.set(cacheKey, { data: guardData, timestamp: Date.now() });
         return guardData;
       } catch (error) {
-        if (error.name !== "AbortError") {
+        if (!axios.isCancel(error) && error.name !== "AbortError" && error.name !== "CanceledError" && error.code !== "ERR_CANCELED") {
           toast.error(error.response?.data?.message || `Failed to fetch guard with ID ${empId}`);
         }
         return null;
@@ -1296,7 +1296,7 @@ const SecurityRoaster = ({ setBreadcrumbItems }) => {
         logger.info("fetchEmployeeById parsed employee data for empId", empId, ":", employee);
         return employee;
       } catch (error) {
-        if (error.name !== "AbortError") {
+        if (!axios.isCancel(error) && error.name !== "AbortError" && error.name !== "CanceledError" && error.code !== "ERR_CANCELED") {
           toast.error(
             error.response?.data?.message || `Employee with ID ${empId} not found. Please verify the ID.`
           );
@@ -1498,7 +1498,7 @@ const SecurityRoaster = ({ setBreadcrumbItems }) => {
           toggleModal();
         }
       } catch (error) {
-        if (error.name !== "AbortError") {
+        if (!axios.isCancel(error) && error.name !== "AbortError" && error.name !== "CanceledError" && error.code !== "ERR_CANCELED") {
           toast.error(error.response?.data?.message || "Failed to update shift");
         }
       }
@@ -1563,7 +1563,7 @@ const SecurityRoaster = ({ setBreadcrumbItems }) => {
         toggleAddModal();
       }
     } catch (error) {
-      if (error.name !== "AbortError") {
+      if (!axios.isCancel(error) && error.name !== "AbortError" && error.name !== "CanceledError" && error.code !== "ERR_CANCELED") {
         toast.error(error.response?.data?.message || "Failed to add employee shift");
       }
     }

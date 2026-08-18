@@ -1,0 +1,517 @@
+{
+  "employees": [
+    {
+      "empId": "101",
+      "empName": "Rajesh Kumar",
+      "empDesignation": "Head Security Guard",
+      "empDepartment": "Main Gate Security",
+      "empMobileNo": "9876543210",
+      "empAadharNo": "452189341029",
+      "empPanNo": "ABCDE1234F",
+      "empDob": "1990-05-15",
+      "empDoj": "2021-01-10",
+      "bankAccountNo": "30981234567",
+      "epfNo": "DLCPM00123450000101",
+      "esiNo": "11000123450000101",
+      "empWeekOff": "Sunday",
+      "empImage": "101.jpg",
+      "address": "Plot No. 42, Sector 15, Rohini, New Delhi - 110085"
+    },
+    {
+      "empId": "102",
+      "empName": "Suresh Sharma",
+      "empDesignation": "Security Supervisor",
+      "empDepartment": "Executive Block Security",
+      "empMobileNo": "9811234567",
+      "empAadharNo": "782390124561",
+      "empPanNo": "BCDEF2345G",
+      "empDob": "1988-08-20",
+      "empDoj": "2019-06-01",
+      "bankAccountNo": "50100234567890",
+      "epfNo": "UPKNP00234560000102",
+      "esiNo": "11000123450000102",
+      "empWeekOff": "Monday",
+      "empImage": "102.jpg",
+      "address": "Flat 304, Green Valley Apartments, Sector 62, Noida, Uttar Pradesh - 201309"
+    },
+    {
+      "empId": "103",
+      "empName": "Amit Verma",
+      "empDesignation": "CCTV Control Room Lead",
+      "empDepartment": "Surveillance & Dispatch",
+      "empMobileNo": "9820345678",
+      "empAadharNo": "341256789034",
+      "empPanNo": "CDEFG3456H",
+      "empDob": "1985-11-12",
+      "empDoj": "2018-03-15",
+      "bankAccountNo": "002901509823",
+      "epfNo": "HRGUR00345670000103",
+      "esiNo": "11000123450000103",
+      "empWeekOff": "Sunday",
+      "empImage": "103.jpg",
+      "address": "House No. 112, Phase 2, DLF Colony, Gurugram, Haryana - 122002"
+    },
+    {
+      "empId": "104",
+      "empName": "Ramesh Patel",
+      "empDesignation": "Patrol Guard",
+      "empDepartment": "Perimeter & Campus Patrol",
+      "empMobileNo": "9723456789",
+      "empAadharNo": "903412785623",
+      "empPanNo": "DEFGH4567I",
+      "empDob": "1992-02-28",
+      "empDoj": "2022-07-20",
+      "bankAccountNo": "651234890123",
+      "epfNo": "GJAHD00456780000104",
+      "esiNo": "11000123450000104",
+      "empWeekOff": "Tuesday",
+      "empImage": "104.jpg",
+      "address": "B-12, Shanti Nagar, SG Highway, Ahmedabad, Gujarat - 380054"
+    },
+    {
+      "empId": "105",
+      "empName": "Manoj Singh",
+      "empDesignation": "Chief Security Officer",
+      "empDepartment": "Administration & Operations",
+      "empMobileNo": "9934567890",
+      "empAadharNo": "567890123456",
+      "empPanNo": "EFGHI5678J",
+      "empDob": "1983-09-05",
+      "empDoj": "2017-10-01",
+      "bankAccountNo": "201987654321",
+      "epfNo": "DLCPM00567890000105",
+      "esiNo": "11000123450000105",
+      "empWeekOff": "Wednesday",
+      "empImage": "105.jpg",
+      "address": "Quarter 14-B, Police Line Road, Civil Lines, Jaipur, Rajasthan - 302006"
+    },
+    {
+      "empId": "106",
+      "empName": "Vikram Rathore",
+      "empDesignation": "Armed Security Guard",
+      "empDepartment": "Treasury & Cash Logistics",
+      "empMobileNo": "9414012345",
+      "empAadharNo": "678901234567",
+      "empPanNo": "FGHIJ6789K",
+      "empDob": "1989-12-04",
+      "empDoj": "2020-04-15",
+      "bankAccountNo": "408912345678",
+      "epfNo": "RJJOO00678900000106",
+      "esiNo": "11000123450000106",
+      "empWeekOff": "Thursday",
+      "empImage": "106.jpg",
+      "address": "Near Fort Road, Ratanada, Jodhpur, Rajasthan - 342011"
+    },
+    {
+      "empId": "107",
+      "empName": "Pooja Sharma",
+      "empDesignation": "Female Security Officer",
+      "empDepartment": "Reception & Visitor Screening",
+      "empMobileNo": "9845012345",
+      "empAadharNo": "890123456789",
+      "empPanNo": "GHIJK7890L",
+      "empDob": "1994-07-11",
+      "empDoj": "2023-03-01",
+      "bankAccountNo": "50200012345678",
+      "epfNo": "KABAN00789010000107",
+      "esiNo": "11000123450000107",
+      "empWeekOff": "Saturday",
+      "empImage": "107.jpg",
+      "address": "#45, 3rd Main, Indiranagar 2nd Stage, Bengaluru, Karnataka - 560038"
+    },
+    {
+      "empId": "108",
+      "empName": "Deepak Yadav",
+      "empDesignation": "Quick Response Team Lead",
+      "empDepartment": "Emergency Response",
+      "empMobileNo": "9818901234",
+      "empAadharNo": "123098456712",
+      "empPanNo": "HIJKL8901M",
+      "empDob": "1991-03-18",
+      "empDoj": "2021-08-10",
+      "bankAccountNo": "109823456789",
+      "epfNo": "HRFAR00890120000108",
+      "esiNo": "11000123450000108",
+      "empWeekOff": "Friday",
+      "empImage": "108.jpg",
+      "address": "Village Badshahpur, Sector 66, Gurugram, Haryana - 122101"
+    },
+    {
+      "empId": "109",
+      "empName": "Sanjay Gupta",
+      "empDesignation": "Parking & Traffic Marshal",
+      "empDepartment": "Basement & Traffic Control",
+      "empMobileNo": "9830123456",
+      "empAadharNo": "234190875634",
+      "empPanNo": "IJKLM9012N",
+      "empDob": "1987-10-25",
+      "empDoj": "2019-11-01",
+      "bankAccountNo": "304589123456",
+      "epfNo": "WBCAL00901230000109",
+      "esiNo": "11000123450000109",
+      "empWeekOff": "Sunday",
+      "empImage": "109.jpg",
+      "address": "12/A, Gariahat Road, Ballygunge, Kolkata, West Bengal - 700019"
+    },
+    {
+      "empId": "110",
+      "empName": "Sunita Devi",
+      "empDesignation": "Security Guard",
+      "empDepartment": "Women Hostel & Block B",
+      "empMobileNo": "9450123456",
+      "empAadharNo": "345201986745",
+      "empPanNo": "JKLMN0123O",
+      "empDob": "1993-06-30",
+      "empDoj": "2022-02-14",
+      "bankAccountNo": "204891234567",
+      "epfNo": "UPLKO01012340000110",
+      "esiNo": "11000123450000110",
+      "empWeekOff": "Thursday",
+      "empImage": "110.jpg",
+      "address": "Sector 4, Gomti Nagar, Lucknow, Uttar Pradesh - 226010"
+    }
+  ],
+  "roster": [
+    {
+      "id": "101",
+      "empId": "101",
+      "name": "Rajesh Kumar",
+      "department": "Main Gate Security",
+      "designation": "Head Security Guard",
+      "weeklyShifts": {
+        "sunday": "WO",
+        "monday": "Morning",
+        "tuesday": "Morning",
+        "wednesday": "Morning",
+        "thursday": "Morning",
+        "friday": "Morning",
+        "saturday": "Morning"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "102",
+      "empId": "102",
+      "name": "Suresh Sharma",
+      "department": "Executive Block Security",
+      "designation": "Security Supervisor",
+      "weeklyShifts": {
+        "sunday": "Evening",
+        "monday": "WO",
+        "tuesday": "Evening",
+        "wednesday": "Evening",
+        "thursday": "Evening",
+        "friday": "Evening",
+        "saturday": "Evening"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "103",
+      "empId": "103",
+      "name": "Amit Verma",
+      "department": "Surveillance & Dispatch",
+      "designation": "CCTV Control Room Lead",
+      "weeklyShifts": {
+        "sunday": "WO",
+        "monday": "Night",
+        "tuesday": "Night",
+        "wednesday": "Night",
+        "thursday": "Night",
+        "friday": "Night",
+        "saturday": "Night"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "104",
+      "empId": "104",
+      "name": "Ramesh Patel",
+      "department": "Perimeter & Campus Patrol",
+      "designation": "Patrol Guard",
+      "weeklyShifts": {
+        "sunday": "General",
+        "monday": "General",
+        "tuesday": "WO",
+        "wednesday": "General",
+        "thursday": "General",
+        "friday": "General",
+        "saturday": "General"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "105",
+      "empId": "105",
+      "name": "Manoj Singh",
+      "department": "Administration & Operations",
+      "designation": "Chief Security Officer",
+      "weeklyShifts": {
+        "sunday": "Morning",
+        "monday": "Morning",
+        "tuesday": "Morning",
+        "wednesday": "WO",
+        "thursday": "Morning",
+        "friday": "Morning",
+        "saturday": "Morning"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "106",
+      "empId": "106",
+      "name": "Vikram Rathore",
+      "department": "Treasury & Cash Logistics",
+      "designation": "Armed Security Guard",
+      "weeklyShifts": {
+        "sunday": "General",
+        "monday": "General",
+        "tuesday": "General",
+        "wednesday": "General",
+        "thursday": "WO",
+        "friday": "General",
+        "saturday": "General"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "107",
+      "empId": "107",
+      "name": "Pooja Sharma",
+      "department": "Reception & Visitor Screening",
+      "designation": "Female Security Officer",
+      "weeklyShifts": {
+        "sunday": "Morning",
+        "monday": "Morning",
+        "tuesday": "Morning",
+        "wednesday": "Morning",
+        "thursday": "Morning",
+        "friday": "Morning",
+        "saturday": "WO"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "108",
+      "empId": "108",
+      "name": "Deepak Yadav",
+      "department": "Emergency Response",
+      "designation": "Quick Response Team Lead",
+      "weeklyShifts": {
+        "sunday": "Night",
+        "monday": "Night",
+        "tuesday": "Night",
+        "wednesday": "Night",
+        "thursday": "Night",
+        "friday": "WO",
+        "saturday": "Night"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "109",
+      "empId": "109",
+      "name": "Sanjay Gupta",
+      "department": "Basement & Traffic Control",
+      "designation": "Parking & Traffic Marshal",
+      "weeklyShifts": {
+        "sunday": "WO",
+        "monday": "Evening",
+        "tuesday": "Evening",
+        "wednesday": "Evening",
+        "thursday": "Evening",
+        "friday": "Evening",
+        "saturday": "Evening"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    },
+    {
+      "id": "110",
+      "empId": "110",
+      "name": "Sunita Devi",
+      "department": "Women Hostel & Block B",
+      "designation": "Security Guard",
+      "weeklyShifts": {
+        "sunday": "Morning",
+        "monday": "Morning",
+        "tuesday": "Morning",
+        "wednesday": "Morning",
+        "thursday": "WO",
+        "friday": "Morning",
+        "saturday": "Morning"
+      },
+      "shiftFromDate": "2026-08-01",
+      "shiftToDate": "2026-08-31"
+    }
+  ],
+  "attendance": [
+    {
+      "_id": "att_101_today",
+      "empId": "101",
+      "empName": "Rajesh Kumar",
+      "date": "2026-08-16",
+      "inTime": "06:00",
+      "outTime": "14:00",
+      "shift": "Morning",
+      "status": "Present"
+    },
+    {
+      "_id": "att_102_today",
+      "empId": "102",
+      "empName": "Suresh Sharma",
+      "date": "2026-08-16",
+      "inTime": "14:00",
+      "outTime": "22:00",
+      "shift": "Evening",
+      "status": "Present"
+    },
+    {
+      "_id": "att_103_today",
+      "empId": "103",
+      "empName": "Amit Verma",
+      "date": "2026-08-16",
+      "inTime": "22:00",
+      "outTime": "06:00",
+      "shift": "Night",
+      "status": "Present"
+    },
+    {
+      "_id": "att_104_today",
+      "empId": "104",
+      "empName": "Ramesh Patel",
+      "date": "2026-08-16",
+      "inTime": "09:00",
+      "outTime": "18:00",
+      "shift": "General",
+      "status": "Present"
+    },
+    {
+      "_id": "att_105_today",
+      "empId": "105",
+      "empName": "Manoj Singh",
+      "date": "2026-08-16",
+      "inTime": "06:00",
+      "outTime": "14:00",
+      "shift": "Morning",
+      "status": "Present"
+    },
+    {
+      "_id": "att_106_today",
+      "empId": "106",
+      "empName": "Vikram Rathore",
+      "date": "2026-08-16",
+      "inTime": "09:00",
+      "outTime": "18:00",
+      "shift": "General",
+      "status": "Present"
+    },
+    {
+      "_id": "att_107_today",
+      "empId": "107",
+      "empName": "Pooja Sharma",
+      "date": "2026-08-16",
+      "inTime": "06:00",
+      "outTime": "14:00",
+      "shift": "Morning",
+      "status": "Present"
+    },
+    {
+      "_id": "att_108_today",
+      "empId": "108",
+      "empName": "Deepak Yadav",
+      "date": "2026-08-16",
+      "inTime": "22:00",
+      "outTime": "06:00",
+      "shift": "Night",
+      "status": "Present"
+    },
+    {
+      "_id": "att_109_today",
+      "empId": "109",
+      "empName": "Sanjay Gupta",
+      "date": "2026-08-16",
+      "inTime": "14:00",
+      "outTime": "22:00",
+      "shift": "Evening",
+      "status": "Present"
+    },
+    {
+      "_id": "att_110_today",
+      "empId": "110",
+      "empName": "Sunita Devi",
+      "date": "2026-08-16",
+      "inTime": "06:00",
+      "outTime": "14:00",
+      "shift": "Morning",
+      "status": "Present"
+    }
+  ],
+  "leaves": [
+    {
+      "_id": "leave_001",
+      "empId": "101",
+      "empName": "Rajesh Kumar",
+      "leaveType": "Casual Leave",
+      "fromDate": "2026-08-20",
+      "toDate": "2026-08-21",
+      "reason": "Family ceremony and house puja in native village",
+      "status": "Approved",
+      "appliedOn": "2026-08-15"
+    },
+    {
+      "_id": "leave_002",
+      "empId": "104",
+      "empName": "Ramesh Patel",
+      "leaveType": "Earned Leave",
+      "fromDate": "2026-08-24",
+      "toDate": "2026-08-26",
+      "reason": "Annual family pilgrimage to Somnath Temple",
+      "status": "Approved",
+      "appliedOn": "2026-08-14"
+    },
+    {
+      "_id": "leave_003",
+      "empId": "107",
+      "empName": "Pooja Sharma",
+      "leaveType": "Casual Leave",
+      "fromDate": "2026-08-28",
+      "toDate": "2026-08-28",
+      "reason": "Sister's convocation ceremony at Bengaluru University",
+      "status": "Pending",
+      "appliedOn": "2026-08-16"
+    }
+  ],
+  "ods": [
+    {
+      "_id": "od_001",
+      "empId": "103",
+      "empName": "Amit Verma",
+      "odType": "Security Audit",
+      "fromDate": "2026-08-22",
+      "toDate": "2026-08-22",
+      "reason": "Annual surveillance infrastructure audit at Regional Data Center",
+      "status": "Approved",
+      "appliedOn": "2026-08-16"
+    },
+    {
+      "_id": "od_002",
+      "empId": "106",
+      "empName": "Vikram Rathore",
+      "odType": "VIP Escort Duty",
+      "fromDate": "2026-08-25",
+      "toDate": "2026-08-25",
+      "reason": "Armed escort for Board of Directors convoy from IGI Airport",
+      "status": "Approved",
+      "appliedOn": "2026-08-15"
+    }
+  ]
+}

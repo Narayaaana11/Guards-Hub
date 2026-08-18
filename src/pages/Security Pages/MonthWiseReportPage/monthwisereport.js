@@ -1265,7 +1265,7 @@ const MonthWiseReport = ({ setBreadcrumbItems }) => {
       try {
         return await fn();
       } catch (error) {
-        if (error.name === "AbortError") throw error;
+        if (axios.isCancel(error) || error.name === "AbortError" || error.name === "CanceledError" || error.code === "ERR_CANCELED") throw error;
         if (error.response?.status === 429) await new Promise((r) => setTimeout(r, delay * 2));
         else if (i < retries - 1) await new Promise((r) => setTimeout(r, delay));
         else throw error;
@@ -1325,7 +1325,7 @@ const MonthWiseReport = ({ setBreadcrumbItems }) => {
       setEmployeeDetailsCache(employees);
       return employees;
     } catch (err) {
-      if (err.name !== "AbortError") logger.error("Error fetching employee details:", err);
+      if (!axios.isCancel(err) && err.name !== "AbortError" && err.name !== "CanceledError" && err.code !== "ERR_CANCELED") logger.error("Error fetching employee details:", err);
       return {}; // Return empty object instead of throwing to prevent main flow crash
     } finally {
       abortControllersRef.current.delete(controllerId);
@@ -1454,7 +1454,7 @@ const MonthWiseReport = ({ setBreadcrumbItems }) => {
     } catch (err) {
       // --- FIX 4: Ignore AbortErrors ---
       // This ensures we DO NOT show an error if the user navigated away
-      if (err.name !== "AbortError") {
+      if (!axios.isCancel(err) && err.name !== "AbortError" && err.name !== "CanceledError" && err.code !== "ERR_CANCELED") {
         const errorMessage = `Failed to fetch employee data: ${err.message}`;
         setError(errorMessage);
         toast.error(errorMessage);
@@ -1555,7 +1555,7 @@ const MonthWiseReport = ({ setBreadcrumbItems }) => {
         setModal(true);
       }
     } catch (err) {
-      if(err.name !== "AbortError") toast.error("Failed to load employee details");
+      if (!axios.isCancel(err) && err.name !== "AbortError" && err.name !== "CanceledError" && err.code !== "ERR_CANCELED") toast.error("Failed to load employee details");
     } finally {
       setIsModalLoading(false);
     }
